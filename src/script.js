@@ -19,7 +19,7 @@ const app = {};
 // Create the API call to get data response
 app.getDataResponse = function (name) {
   $.ajax({
-    url: "http://proxy.hackeryou.com",
+    url: "https://proxy.hackeryou.com",
     dataType: "json",
     method: "GET",
     data: {
