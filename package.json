@@ -1,0 +1,24 @@
+{
+  "name": "heroes-villians-app",
+  "version": "1.0.0",
+  "description": "Searching heroes and villians info app",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Christie Tran",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/optimizer-cssnano": "^2.0.0-nightly.607",
+    "@parcel/optimizer-htmlnano": "^2.0.0-nightly.607",
+    "@parcel/packager-css": "^2.0.0-nightly.607",
+    "@parcel/packager-html": "^2.0.0-nightly.607",
+    "@parcel/transformer-css": "^2.0.0-nightly.607",
+    "@parcel/transformer-html": "^2.0.0-nightly.607",
+    "@parcel/transformer-postcss": "^2.0.0-nightly.607",
+    "@parcel/transformer-posthtml": "^2.0.0-nightly.607",
+    "parcel": "^2.0.0-nightly.605",
+    "postcss": "^8.2.6"
+  }
+}
