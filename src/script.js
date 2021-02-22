@@ -4,12 +4,10 @@ const $form = $("form");
 const $textInput = $("input[type='text']");
 const $btnFight = $(".btn-fight");
 const $btnStart = $(".btn-start");
-const $btnEnter = $("#btn-enter");
 const $heroName = $("#hero-name");
 const $villianName = $("#villian-name");
 const $listContainer = $(".list-container");
 const $message = $(".message");
-const $wrapper = $(".wrapper");
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Create an emtpy app object
