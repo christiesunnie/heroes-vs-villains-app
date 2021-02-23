@@ -5,7 +5,7 @@ const $textInput = $("input[type='text']");
 const $btnFight = $(".btn-fight");
 const $btnStart = $(".btn-start");
 const $heroName = $("#hero-name");
-const $villianName = $("#villian-name");
+const $villainName = $("#villain-name");
 const $listContainer = $(".list-container");
 const $message = $(".message");
 
@@ -37,7 +37,7 @@ app.getDataResponse = function (name) {
       const index = Math.floor(Math.random() * resultsArray.length);
       const result = resultsArray[index];
 
-      // Get the data to check if the data is the result of hero or villian
+      // Get the data to check if the data is the result of hero or villain
       const type = result.biography.alignment;
       if (type === "good") {
         // Display the result to hero section
@@ -46,28 +46,28 @@ app.getDataResponse = function (name) {
         // Call the function to display the modal overlay the hero section when click the info button
         app.displayDetails("hero");
       } else {
-        // Display the result to villian section
-        app.displayInfo("villian", result);
+        // Display the result to villain section
+        app.displayInfo("villain", result);
 
-        // Call the function to display open the modal overlay the villian section when click the info button
-        app.displayDetails("villian");
+        // Call the function to display open the modal overlay the villain section when click the info button
+        app.displayDetails("villain");
       }
 
       // Search if there are enough of 10 <span> elements to get all of the values
       if ($(".fight").length === 10) {
         // Call the score function and store in the variables
         const heroScore = app.score("hero");
-        const villianScore = app.score("villian");
+        const villainScore = app.score("villain");
 
         // Listen to the click button to compare the score
         $btnFight.on("click", function () {
           $message.addClass("show");
 
           // Print the message on the page
-          if (heroScore > villianScore) {
-            app.displayMessage("hero", "villian", heroScore);
+          if (heroScore > villainScore) {
+            app.displayMessage("hero", "villain", heroScore);
           } else {
-            app.displayMessage("villian", "hero", villianScore);
+            app.displayMessage("villain", "hero", villainScore);
           }
         });
       }
@@ -85,7 +85,7 @@ app.getDataResponse = function (name) {
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Create the function to display the info of heroes and villians to the page
+// Create the function to display the info of heroes and villains to the page
 app.displayInfo = function (type, result) {
   const displayHtml = `
   <div class="${type}-card">
@@ -135,7 +135,7 @@ app.displayInfo = function (type, result) {
       : result.biography.alignment === "good"
       ? "a fictional superhero"
       : result.biography.alignment === "bad"
-      ? "a fictional villian"
+      ? "a fictional villain"
       : "a fictional neutral character"
   } who appears in comic books published by ${
     result.biography.publisher !== "-" ? result.biography.publisher : "unknown"
@@ -253,11 +253,11 @@ app.getValue = function () {
 
     // Get the value of the input from UI and store it in the variables
     const heroNameValue = $heroName.val();
-    const villianNameValue = $villianName.val();
+    const villainNameValue = $villainName.val();
 
-    // Call the getDataResponse functions by passing the argument as the name of hero or villian
+    // Call the getDataResponse functions by passing the argument as the name of hero or villain
     app.getDataResponse(heroNameValue);
-    app.getDataResponse(villianNameValue);
+    app.getDataResponse(villainNameValue);
 
     // Empty the input value after submitting the form
     $textInput.val("");

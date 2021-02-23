@@ -114,7 +114,7 @@ a {
 
 /* List styles */
 .hero-container,
-.villian-container {
+.villain-container {
   position: relative;
   margin: var(--margin-primary);
   padding: 1.5rem;
@@ -130,15 +130,15 @@ a {
   color: var(--color-white);
 }
 
-.villian-container,
-.villian-info {
+.villain-container,
+.villain-info {
   background: #fff100;
   color: var(--color-black);
 }
 
 /* Modal container styles  */
 .hero-info--modal,
-.villian-info--modal {
+.villain-info--modal {
   position: absolute;
   top: 0;
   left: 0;
@@ -152,13 +152,13 @@ a {
 }
 
 .hero-info--modal.show,
-.villian-info--modal.show {
+.villain-info--modal.show {
   z-index: 2;
   opacity: 1;
 }
 
 .hero-info,
-.villian-info {
+.villain-info {
   margin: 2rem 0;
   padding: 2rem 1rem;
   height: 90%;
@@ -179,7 +179,7 @@ a {
 }
 
 .hero-card,
-.villian-card {
+.villain-card {
   padding: var(--padding-primary);
   border-radius: var(--border-radius);
 }
@@ -190,8 +190,8 @@ a {
   color: var(--color-black);
 }
 
-.villian-card,
-.villian-info--modal {
+.villain-card,
+.villain-info--modal {
   background: var(--bgColor-primary2);
   color: var(--color-white);
 }
@@ -206,7 +206,7 @@ a {
 }
 
 .hero-image,
-.villian-image {
+.villain-image {
   width: 60%;
   height: 15%;
   border-radius: var(--border-radius);
@@ -214,7 +214,7 @@ a {
 }
 
 .hero-features,
-.villian-features {
+.villain-features {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem 2rem;
@@ -227,7 +227,7 @@ a {
   border: 2px var(--color-black) dotted;
 }
 
-.villian-features {
+.villain-features {
   border: 2px var(--color-white) dotted;
 }
 
@@ -269,12 +269,12 @@ a {
 .btn-start,
 #btn-enter,
 .btn-fight,
-.btn-info--villian {
+.btn-info--villain {
   background: var(--bgColor-primary1);
 }
 
 .btn-info--hero,
-.btn-info--villian {
+.btn-info--villain {
   width: 99%;
 }
 
@@ -287,7 +287,7 @@ a {
 
 #btn-enter:hover,
 .btn-info--hero:hover,
-.btn-info--villian:hover {
+.btn-info--villain:hover {
   background: transparent;
   transition: all 200ms ease-in-out;
 }
@@ -297,13 +297,13 @@ a {
 }
 
 #btn-enter:hover,
-.btn-info--villian:hover {
+.btn-info--villain:hover {
   color: var(--color-white);
   border: 1px var(--color-white) solid;
 }
 
 .hero--btn-close,
-.villian--btn-close {
+.villain--btn-close {
   position: absolute;
   top: 1.5rem;
   right: 2rem;
@@ -318,12 +318,12 @@ a {
   color: var(--color-black);
 }
 
-.villian--btn-close {
+.villain--btn-close {
   color: var(--color-white);
 }
 
 .hero--btn-close:hover,
-.villian--btn-close:hover {
+.villain--btn-close:hover {
   transform: scale(1.3);
 }
 
@@ -354,13 +354,13 @@ a {
   }
 
   .hero-card,
-  .villian-card {
+  .villain-card {
     margin: var(--margin-primary);
     padding: 2rem 1rem;
   }
 
   .hero-image,
-  .villian-image {
+  .villain-image {
     width: 40%;
   }
 
@@ -383,7 +383,7 @@ a {
 @media screen and (min-width: 1000px) {
   .feature-list,
   .btn-info--hero,
-  .btn-info--villian {
+  .btn-info--villain {
     font-size: var(--fs-primary1);
   }
 

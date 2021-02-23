@@ -1,97 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="An app for checking the information of supeheroes and villians"
-    />
-    <title>Heroes vs. Villians Combat</title>
-    <link rel="stylesheet" href="src/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <script
-      defer
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    ></script>
-    <script defer src="src/script.js"></script>
-  </head>
-  <body>
-    <!-- Header section starts here-->
-    <header>
-      <!-- Image header -->
-      <div class="header-img">
-        <button class="btn btn-start">START NOW</button>
-      </div>
-    </header>
-    <!-- Header section ends here-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="An app for checking the information of supeheroes and villains"
+        />
+        <title>Heroes vs. Villains Combat</title>
+        <link rel="stylesheet" href="src/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+        <script
+            defer
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        ></script>
+        <script defer src="src/script.js"></script>
+    </head>
+    <body>
+        <!-- Header section starts here-->
+        <header>
+            <!-- Image header -->
+            <div class="header-img">
+                <button class="btn btn-start">START NOW</button>
+            </div>
+        </header>
+        <!-- Header section ends here-->
 
-    <main>
-      <!-- Form section starts here-->
-      <form class="form-container">
-        <div class="input-container">
-          <label for="hero-name">Hero's Name:</label>
-          <input
-            type="text"
-            id="hero-name"
-            placeholder=" E.g: Batman"
-            required
-          />
-        </div>
-        <div class="input-container">
-          <label for="villian-name">Villian's Name:</label>
-          <input
-            type="text"
-            id="villian-name"
-            placeholder=" E.g: Joker"
-            required
-          />
-        </div>
-        <div>
-          <input type="submit" class="btn" id="btn-enter" value="Enter" />
-        </div>
-      </form>
-      <!-- Form section ends here-->
+        <main>
+            <!-- Form section starts here-->
+            <form class="form-container">
+                <div class="input-container">
+                    <label for="hero-name">Hero's Name:</label>
+                    <input
+                        type="text"
+                        id="hero-name"
+                        placeholder=" E.g: Batman"
+                        required
+                    />
+                </div>
+                <div class="input-container">
+                    <label for="villain-name">Villain's Name:</label>
+                    <input
+                        type="text"
+                        id="villain-name"
+                        placeholder=" E.g: Joker"
+                        required
+                    />
+                </div>
+                <div>
+                    <input
+                        type="submit"
+                        class="btn"
+                        id="btn-enter"
+                        value="Enter"
+                    />
+                </div>
+            </form>
+            <!-- Form section ends here-->
 
-      <!-- Display the search results starts here-->
-      <div class="wrapper">
-        <!-- Heroes list -->
-        <div class="hero-container">
-          <h2>Heroes</h2>
-          <section class="list-container hero">
-            <!-- Hero info shown here -->
-          </section>
-        </div>
+            <!-- Display the search results starts here-->
+            <div class="wrapper">
+                <!-- Heroes list -->
+                <div class="hero-container">
+                    <h2>Heroes</h2>
+                    <section class="list-container hero">
+                        <!-- Hero info shown here -->
+                    </section>
+                </div>
 
-        <!-- Vilians list -->
-        <div class="villian-container">
-          <h2>Villians</h2>
-          <section class="list-container villian">
-            <!-- Villian info shown here -->
-          </section>
-        </div>
-      </div>
+                <!-- Vilians list -->
+                <div class="villain-container">
+                    <h2>Villains</h2>
+                    <section class="list-container villain">
+                        <!-- villain info shown here -->
+                    </section>
+                </div>
+            </div>
 
-      <!-- Fight button -->
-      <button class="btn btn-fight">LET'S FIGHT</button>
+            <!-- Fight button -->
+            <button class="btn btn-fight">LET'S FIGHT</button>
 
-      <!-- Display the message for the winner here -->
-      <div class="message"></div>
+            <!-- Display the message for the winner here -->
+            <div class="message"></div>
 
-      <!-- Display the search results ends here-->
-    </main>
+            <!-- Display the search results ends here-->
+        </main>
 
-    <!-- Footer starts here-->
-    <footer class="copyright">
-      <p>&copy; Copyright 2021 by Christie Tran</p>
-      <a href="https://junocollege.com/" rel="noopener" target="_blank"
-        >Created at Juno College</a
-      >
-    </footer>
-    <!-- Footer ends here -->
-  </body>
+        <!-- Footer starts here-->
+        <footer class="copyright">
+            <p>&copy; Copyright 2021 by Christie Tran</p>
+            <a href="https://junocollege.com/" rel="noopener" target="_blank"
+                >Created at Juno College</a
+            >
+        </footer>
+        <!-- Footer ends here -->
+    </body>
 </html>
