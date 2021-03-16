@@ -4,7 +4,7 @@
 
 2. As an user, I want to seach for heroes' name and villains' name to get the information for my search
 
-3. As the author, I want to display the result in the appropriate sections when the user submit the form. If the names was submitted not available in the server or the user typed the names in the wrong categories, I want to announce that the submission was not successful by the alert popping up in the page. As the result, the search will not be shown in the page.
+3. As the author, I want to display the result in the appropriate sections when the user submit the form. If the names was submitted not available in the server or the user typed the names in the wrong categories, I want to announce that the submission was not successful by printing the message in the page. As the result, the search will not be shown in the page.
 
 4. As the author, I want to scroll to the display result section when the user submits the form.
 
