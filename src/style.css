@@ -121,7 +121,7 @@ a {
     border-radius: var(--border-radius);
     background: var(--bgColor-primary2);
     color: var(--color-white);
-    font-size: var(--fs-primary2);
+    font-size: var(--fs-primary1);
     text-align: center;
 }
 
@@ -358,12 +358,9 @@ a {
         padding: 3em 5rem;
     }
 
-    input {
+    input,
+    .error-message {
         font-size: 1.2rem;
-    }
-
-    .form-container {
-        font-size: var(--fs-primary2);
     }
 
     .hero-card,
@@ -400,6 +397,7 @@ a {
         font-size: var(--fs-primary1);
     }
 
+    .error-message,
     .message {
         font-size: var(--fs-primary2);
     }
