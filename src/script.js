@@ -73,13 +73,6 @@ app.getDataFromArray = function (data) {
         // Call the function to display open the modal overlay the villain section when click the info button
         app.displayDetails("villain");
     }
-
-    if (
-        $(".hero").children().length === 0 ||
-        $(".villain").children().length === 0
-    ) {
-        app.$listContainer.empty();
-    }
 };
 
 // Create the function to search if there are enough of 10 <span> elements to get all of the values
